@@ -7,10 +7,10 @@ import {
   ToggleButtonGroup,
   ToggleButton
 } from '@mui/material'
-import SendIcon from '@mui/icons-material/Send'
-import FormatBoldIcon from '@mui/icons-material/FormatBold'
-import FormatItalicIcon from '@mui/icons-material/FormatItalic'
-import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined'
+// import SendIcon from '@mui/icons-material/Send'
+// import FormatBoldIcon from '@mui/icons-material/FormatBold'
+// import FormatItalicIcon from '@mui/icons-material/FormatItalic'
+// import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined'
 
 export const MuiButton = () => {
   const [formats, setFormats] = useState<string[]>([])
@@ -24,14 +24,14 @@ export const MuiButton = () => {
   }
   return (
     <Stack spacing={4}>
-      <Stack spacing={2} direction='row'>
+      <Stack spacing={2} display='block' direction='row'>
         <Button variant='text' href='https://google.com'>
           Text
         </Button>
         <Button variant='contained'>Contained</Button>
         <Button variant='outlined'>Outlined</Button>
       </Stack>
-      <Stack spacing={2} direction='row'>
+      <Stack spacing={2} display='block' direction='row'>
         <Button variant='contained' color='primary'>
           Primary
         </Button>
@@ -62,7 +62,7 @@ export const MuiButton = () => {
             Large
         </Button>
       </Stack>
-      <Stack spacing={2} direction='row'>
+      {/* <Stack spacing={2} direction='row'>
         <Button
           variant='contained'
           startIcon={<SendIcon />}
@@ -76,8 +76,8 @@ export const MuiButton = () => {
         <IconButton color='success' size='small' aria-label='send'>
           <SendIcon />
         </IconButton>
-      </Stack>
-      <Stack direction='row'>
+      </Stack> */}
+      <Stack direction='row' display='block'>
         <ButtonGroup
           variant='text'
           orientation='vertical'
@@ -90,7 +90,7 @@ export const MuiButton = () => {
         </ButtonGroup>
       </Stack>
       <Stack direction='row'>
-        <ToggleButtonGroup
+        {/* <ToggleButtonGroup
           exclusive
           value={formats}
           onChange={handleFormatChange}
@@ -104,7 +104,7 @@ export const MuiButton = () => {
           <ToggleButton value='underlined' aria-label='underline'>
             <FormatUnderlinedIcon />
           </ToggleButton>
-        </ToggleButtonGroup>
+        </ToggleButtonGroup> */}
       </Stack>
     </Stack>
   )
