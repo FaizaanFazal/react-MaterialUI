@@ -1,5 +1,6 @@
 import './App.css';
 import { MuiButton } from './components/MuiButton';
+import { MuiCheckbox } from './components/MuiCheckBox';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiSelect } from './components/MuiSelect';
 import { MuiTextField } from './components/MuiTextField';
@@ -18,6 +19,8 @@ function App() {
       <MuiSelect />
       <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
       <MuiRadioButton />
+      <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
+      <MuiCheckbox />
     </div>
   );
 }
