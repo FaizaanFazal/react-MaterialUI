@@ -7,9 +7,8 @@ import {
   FormLabel,
   FormGroup
 } from '@mui/material'
-//-------network error for below library
-// import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
-// import BookmarkIcon from '@mui/icons-material/Bookmark'
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark'
 
 export const MuiCheckbox = () => {
   const [acceptTnC, setAcceptTnC] = useState(false)
@@ -42,14 +41,14 @@ export const MuiCheckbox = () => {
           label='Accept terms and conditions and YEYA'
         />
       </Box>
-      {/* <Box>
+      <Box>
         <Checkbox
           icon={<BookmarkBorderIcon />}
           checkedIcon={<BookmarkIcon />}
           checked={acceptTnC}
           onChange={handleChange}
         />
-      </Box> */}
+      </Box>
       <Box>
         <FormControl error>
           <FormLabel>Skills</FormLabel>
