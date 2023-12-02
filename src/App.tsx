@@ -1,8 +1,10 @@
 import './App.css';
+import { MuiAccordian } from './components/MuiAccordian';
 import { MuiAutoComplete } from './components/MuiAutoComplete';
 import { MuiButton } from './components/MuiButton';
 import { MuiCard } from './components/MuiCard';
 import { MuiCheckbox } from './components/MuiCheckBox';
+import { MuiImageList } from './components/MuiImageList';
 import { MuiLayout } from './components/MuiLayout';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiRating } from './components/MuiRating';
@@ -36,6 +38,10 @@ function App() {
       <MuiLayout />
       <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
       <MuiCard />
+      <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
+      <MuiAccordian />
+      <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
+      <MuiImageList />
       <Divider variant="middle" sx={{ mt: 3,mb:3 }}/>
     </div>
   );
