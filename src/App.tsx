@@ -6,6 +6,7 @@ import { MuiCard } from './components/MuiCard';
 import { MuiCheckbox } from './components/MuiCheckBox';
 import { MuiImageList } from './components/MuiImageList';
 import { MuiLayout } from './components/MuiLayout';
+import { MuiNavbar } from './components/MuiNavbar';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiRating } from './components/MuiRating';
 import { MuiSelect } from './components/MuiSelect';
@@ -17,6 +18,7 @@ import Divider from '@mui/material/Divider';
 function App() {
   return (
     <div className="App">
+      <MuiNavbar/>
       <MuiTypography />
       <Divider variant="middle"  sx={{ mt: 3,mb:3 }}/>
       <MuiButton />
